@@ -1,0 +1,13 @@
+<div class="bg-dark border-right p-3" id="sidebar">
+    <h3 class="text-light">GifApplication</h3>
+    <hr>
+
+    <div class="list-group list-reset">
+        <button
+        class="list-group-item list-group-item-action"
+        *ngFor="let item of getGifTags()"
+        (click)="searchGifs(item)">
+            {{item | titlecase}}
+        </button>
+    </div>
+</div>
